@@ -40,17 +40,17 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
 
 * Instalar Dockers y Dockers-compose
 
-> Primero, actualice su lista de paquetes existente:
+  > Primero, actualice su lista de paquetes existente:
     
-    ```shell
-    sudo apt update
-    ```
+  ```shell
+  sudo apt update
+  ```
     
-> A continuación, instale algunos paquetes de requisitos previos que permitan a apt usar paquetes a través de HTTPS:
+  > A continuación, instale algunos paquetes de requisitos previos que permitan a apt usar paquetes a través de HTTPS:
      
-   ```shell
-   sudo apt install apt-transport-https ca-certificates curl software-properties-common
-   ```
+  ```shell
+  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+  ```
       
   > Luego, añada la clave de GPG para el repositorio oficial de Docker en su sistema:
     
