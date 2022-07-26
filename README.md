@@ -39,6 +39,7 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
   ```
 
   > instalar Dockers y Dockers-compose
+    
     > Primero, actualice su lista de paquetes existente:
     
       ```shell
@@ -46,31 +47,37 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
        ```
     
     > A continuación, instale algunos paquetes de requisitos previos que permitan a apt usar paquetes a través de HTTPS:
+     
      ```shell
      sudo apt install apt-transport-https ca-certificates curl software-properties-common
       ```
       
     > Luego, añada la clave de GPG para el repositorio oficial de Docker en su sistema:
-     ```shell
+    
+    ```shell
      curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
       ```
       
     > Agregue el repositorio de Docker a las fuentes de APT:
+    > 
     ```shell
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
      ```
      
     > A continuación, actualice el paquete de base de datos con los paquetes de Docker del repositorio recién agregado:
+    > 
     ```shell
     sudo apt update
      ```
      
     > Asegúrese de estar a punto de realizar la instalación desde el repositorio de Docker en lugar del repositorio predeterminado de Ubuntu:
+    > 
     ```shell
     apt-cache policy docker-ce
      ```
      
     > Si bien el número de versión de Docker puede ser distinto, verá un resultado como el siguiente:
+    > 
      ```shell
      usuario@ThePhish:~$ apt-cache policy docker-ce
       ```
@@ -85,17 +92,21 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
     > Observe que docker-ce no está instalado, pero la opción más viable para la instalación es del repositorio de Docker para Ubuntu 20.04 (focal).
     
     > Por último, instale Docker:
+    
      ```shell
      sudo apt install docker-ce
       ```
       
     > Instalamos Docker-Compose
+    
      ```shell
      sudo apt install docker-compose
       ```
 
 * Ejecute los contenedores con Docker Compose
+   
    > Clonar el repositorio
+   
    ```shell
    git clone https://github.com/emalderson/ThePhish.git
     ```
