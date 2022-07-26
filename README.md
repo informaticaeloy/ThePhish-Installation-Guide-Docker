@@ -152,7 +152,15 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
    
    > Comprobaremos varios parámetros:
 
+![image](https://user-images.githubusercontent.com/20743678/181042546-89cedb97-3776-47a5-a974-9f8efeae09b5.png)
 
+![image](https://user-images.githubusercontent.com/20743678/181042777-780522ce-607e-4c73-9dc6-ad59df4fb9dc.png)
+
+![image](https://user-images.githubusercontent.com/20743678/181042882-03896957-8d57-4581-a1af-bdfe5356e367.png)
+
+![image](https://user-images.githubusercontent.com/20743678/181043074-1235d004-016d-4cc9-8a8c-166df92a1562.png)
+
+![image](https://user-images.githubusercontent.com/20743678/181044468-c022927c-dd84-42f3-9c46-c78b97a43002.png)
 
 
 
