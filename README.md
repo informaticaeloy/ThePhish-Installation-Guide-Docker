@@ -84,10 +84,11 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
 
     > Observe que docker-ce no está instalado, pero la opción más viable para la instalación es del repositorio de Docker para Ubuntu 20.04 (focal).
     
-    >Por último, instale Docker:
+    > Por último, instale Docker:
      ```shell
      sudo apt install docker-ce
       ```
+      
     > Instalamos Docker-Compose
      ```shell
      sudo apt install docker-compose
