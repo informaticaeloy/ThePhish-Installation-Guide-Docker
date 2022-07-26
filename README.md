@@ -43,13 +43,13 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
   > Primero, actualice su lista de paquetes existente:
     
   ```shell
-  sudo apt update
+  sudo apt-get update
   ```
     
-  > A continuación, instale algunos paquetes de requisitos previos que permitan a apt usar paquetes a través de HTTPS:
+  > A continuación, instale algunos paquetes de requisitos previos que permitan a apt-get usar paquetes a través de HTTPS:
      
   ```shell
-  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+  sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
   ```
       
   > Luego, añada la clave de GPG para el repositorio oficial de Docker en su sistema:
@@ -67,7 +67,7 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
     > A continuación, actualice el paquete de base de datos con los paquetes de Docker del repositorio recién agregado:
     > 
     ```shell
-    sudo apt update
+    sudo apt-get update
      ```
      
     > Asegúrese de estar a punto de realizar la instalación desde el repositorio de Docker en lugar del repositorio predeterminado de Ubuntu:
@@ -92,13 +92,13 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
     > Por último, instale Docker:
     
     ```shell
-    sudo apt install docker-ce
+    sudo apt-get install docker-ce
     ```
       
     > Instalamos Docker-Compose
     
     ```shell
-    sudo apt install docker-compose
+    sudo apt-get install docker-compose
     ```
 
 * Ejecute los contenedores con Docker Compose
@@ -128,4 +128,22 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
    > Esperamos a que termine la instalación:
 
 ![image](https://user-images.githubusercontent.com/20743678/181035255-03b6db11-52a4-47df-8666-8d8bb79a6331.png)
+
+   > Si nos salen muchos errores, puede que Docker-compose no tenga permisos de escritura en alguna carpeta. Para solucionarlo, hacemos CTRL + C dos veces para forzar el stop y luego ejecutamos los siguientes comandos:
+   
+   ```shell
+   sudo docker-compose stop
+   ```
+   
+   ```shell
+   sudo chown -R 1000:1000 vol/index vol/data vol/elastic*
+   ```
+   
+   ```shell
+   sudo docker-compose up
+   ```
+  
+
+![image](https://user-images.githubusercontent.com/20743678/181040161-78dfabc5-8d05-4cca-8c66-fd8cab779a1c.png)
+
 
