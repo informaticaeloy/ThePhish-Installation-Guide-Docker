@@ -109,23 +109,23 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
    git clone https://github.com/emalderson/ThePhish.git
     ```
 
-Si nos sale un error de ejecución o no tenemos git instalado en el sistema:
+   > Si nos sale un error de ejecución o no tenemos git instalado en el sistema:
 
-```shell
-sudo apt-get install git-all
-```
-    
+   ```shell
+   sudo apt-get install git-all
+   ```
+ 
    > Se nos creará la carpeta 'ThePhish' y una subcarpeta llamada 'docker'. Accedemos a ella:
-    ```shell
-    cd /ThePhish/docker
-     ```
-     
-   > Y dentro de la subcarpeta docker, ejecutamos el comando siguiente:
-    ```shell
-    sudo docker-compose up
-     ```
+   ```shell
+   cd /ThePhish/docker
+   ```
 
-Esperamos a que termine la instalación:
+   > Y dentro de la subcarpeta docker, ejecutamos el comando siguiente:
+   ```shell
+   sudo docker-compose up
+   ```
+
+   > Esperamos a que termine la instalación:
 
 ![image](https://user-images.githubusercontent.com/20743678/181035255-03b6db11-52a4-47df-8666-8d8bb79a6331.png)
 
