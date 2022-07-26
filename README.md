@@ -77,18 +77,16 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
      ```
      
     > Si bien el número de versión de Docker puede ser distinto, verá un resultado como el siguiente:
-    > 
-     ```shell
-     usuario@ThePhish:~$ apt-cache policy docker-ce
-      ```
      
-       > docker-ce:
-       > Installed: (none)
-       > Candidate: 5:20.10.17~3-0~ubuntu-focal
-       > Version table:
-       > 5:20.10.17~3-0~ubuntu-focal 500
-       >     500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
-
+    ```
+    docker-ce:
+    Installed: (none)
+    Candidate: 5:20.10.17~3-0~ubuntu-focal
+    Version table:
+    5:20.10.17~3-0~ubuntu-focal 500
+         500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+    ```
+    
     > Observe que docker-ce no está instalado, pero la opción más viable para la instalación es del repositorio de Docker para Ubuntu 20.04 (focal).
     
     > Por último, instale Docker:
