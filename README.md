@@ -127,9 +127,13 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
 
    > Esperamos a que termine la instalación:
 
-![image](https://user-images.githubusercontent.com/20743678/181035255-03b6db11-52a4-47df-8666-8d8bb79a6331.png)
+   ![image](https://user-images.githubusercontent.com/20743678/181035255-03b6db11-52a4-47df-8666-8d8bb79a6331.png)
 
-   > Si nos salen muchos errores, puede que Docker-compose no tenga permisos de escritura en alguna carpeta. Para solucionarlo, hacemos CTRL + C dos veces para forzar el stop y luego ejecutamos los siguientes comandos:
+   > Si nos salen muchos errores, como en el ejemplo de la imagen...
+   
+   ![image](https://user-images.githubusercontent.com/20743678/181040161-78dfabc5-8d05-4cca-8c66-fd8cab779a1c.png)
+
+   > ...puede que Docker-compose no tenga permisos de escritura en alguna carpeta. Para solucionarlo, hacemos CTRL + C dos veces para forzar el stop y luego ejecutamos los siguientes comandos:
    
    ```shell
    sudo docker-compose stop
@@ -142,8 +146,13 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
    ```shell
    sudo docker-compose up
    ```
-  
+   > Si nos siguen saliendo erroes, como en el ejemplo de la imagen...  
 
-![image](https://user-images.githubusercontent.com/20743678/181040161-78dfabc5-8d05-4cca-8c66-fd8cab779a1c.png)
+   ![image](https://user-images.githubusercontent.com/20743678/181041828-648b174a-f370-4687-a51b-6b214cb53f41.png)
+   
+   > Comprobaremos varios parámetros:
+
+
+
 
 
