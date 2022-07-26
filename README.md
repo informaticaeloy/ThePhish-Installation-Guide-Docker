@@ -162,5 +162,12 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
 
 ![image](https://user-images.githubusercontent.com/20743678/181044468-c022927c-dd84-42f3-9c46-c78b97a43002.png)
 
+![image](https://user-images.githubusercontent.com/20743678/181047764-f9cade92-52ac-485b-bd78-78a10b131351.png)
+
+cd thehive
+sudo nano application.conf
+
+![image](https://user-images.githubusercontent.com/20743678/181048967-7d84f95d-92d0-4d11-a6cc-eb9e06388656.png)
+
 
 
