@@ -38,7 +38,7 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
   sudo apt-get install default-jre
   ```
 
-  * instalar Dockers y Dockers-compose
+* instalar Dockers y Dockers-compose
     
     > Primero, actualice su lista de paquetes existente:
     
