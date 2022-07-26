@@ -91,15 +91,15 @@ Welcome to the ThePhish-Installation-Guide-Docker wiki!
     
     > Por último, instale Docker:
     
-     ```shell
-     sudo apt install docker-ce
-      ```
+    ```shell
+    sudo apt install docker-ce
+    ```
       
     > Instalamos Docker-Compose
     
-     ```shell
-     sudo apt install docker-compose
-      ```
+    ```shell
+    sudo apt install docker-compose
+    ```
 
 * Ejecute los contenedores con Docker Compose
    
