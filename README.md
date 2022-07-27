@@ -169,5 +169,15 @@ sudo nano application.conf
 
 ![image](https://user-images.githubusercontent.com/20743678/181048967-7d84f95d-92d0-4d11-a6cc-eb9e06388656.png)
 
+![image](https://user-images.githubusercontent.com/20743678/181049780-fa27225e-def0-4aa0-b635-a467140c4736.png)
+
+![image](https://user-images.githubusercontent.com/20743678/181051871-2e930f0b-c30e-475e-952e-a7ae2235e2c2.png)
+
+![image](https://user-images.githubusercontent.com/20743678/181052536-0d790ab1-ecf4-48a1-9a18-15dd13e88ddc.png)
+
+![image](https://user-images.githubusercontent.com/20743678/181051656-612bf520-af66-4488-a906-db99ffdc47b7.png)
+
+![image](https://user-images.githubusercontent.com/20743678/181052060-5706a38b-afd6-4d59-9de5-11fcdd42f4d3.png)
+
 
 
