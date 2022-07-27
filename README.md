@@ -210,7 +210,8 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 ![image](https://user-images.githubusercontent.com/20743678/181206015-fe3b65df-97bf-4cba-8737-629342c537b8.png)
 
 Configure the MISP container
-Go to https://localhost and log in with the default credentials:
+Go to https://localhost (https://localhost en un navegador en la propia máquina. En remoto no funciona ya que nos redirecciona a localhost hasta que lo configuremos)
+and log in with the default credentials:
 Username: admin@admin.test
 Password: admin
 Create a new organization
@@ -247,3 +248,28 @@ Sync Actions -> List Feeds -> Load default feed metadata -> All feeds
 Select the feeds to enable
 Click on "Enable selected" (Marcamos todos de las 4 páginas que salen. Hay 71 en total)
   
+Configure the Cortex container
+Go to http://localhost:9001 and click on "Update database"
+Create a new admin user
+Login: admin@<YourOrganizationName>
+Name: admin
+Password: <Password>
+Create a new organization
+Organizations -> Add Organization
+Name: <YourOrganizationName>
+Description: <YourOrganizationDescription>
+Create a new orgadmin user in that organization
+Click on the newly created organization <YourOrganizationName>
+Click on "Add user"
+Login: thephish@<YourOrganizationName>
+Full name: ThePhish
+Roles: read, analyze, orgadmin
+Click on "New password" for the newly created user and set a password for that user
+Create another user in that organization that is used for the integration with TheHive and to use the API
+Click on the newly created organization <YourOrganizationName>
+Click on "Add user"
+Login: integration_account@<YourOrganizationName>
+Full name: integration_account
+Roles: read, analyze
+Click on "Create API key" and then on "Reveal" for the newly created user and save it for later
+Log out the admin user and log in the orgadmin user (ThePhish)
