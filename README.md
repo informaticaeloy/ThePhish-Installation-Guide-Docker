@@ -187,4 +187,63 @@ Configure the MISP container
 
 ![image](https://user-images.githubusercontent.com/20743678/181199302-b4b5425e-09a7-4fa7-86cd-c8c489262cc2.png)
 
+si nos da problemas Mozilla Firefox, instalamos Chrome:
 
+![image](https://user-images.githubusercontent.com/20743678/181201426-21c76d97-e120-4123-a7d9-48183c8cdcaf.png)
+
+Primero descargamos el paquete con el Google Chrome más reciente:
+
+wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+Cuando el proceso termine, actualizamos con el comando:
+
+sudo apt-get update
+
+Y una vez termine de actualizar instalamos la librería de indicadores de sistema para poder ver el icono de Google Chrome en nuestro lanzador (y algunos más):
+
+sudo apt-get install libappindicator1
+
+Y para terminar, instalamos Google Chrome:
+
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+![image](https://user-images.githubusercontent.com/20743678/181206015-fe3b65df-97bf-4cba-8737-629342c537b8.png)
+
+Configure the MISP container
+Go to https://localhost and log in with the default credentials:
+Username: admin@admin.test
+Password: admin
+Create a new organization
+Administration -> Add Organization
+Name: <YourOrganizationName>
+Click on "Generate UUID"
+Click on "Submit"
+Change settings
+Administration -> Server Settings and Maintenance -> MISP Settings
+Change the field MISP.live to True
+Change the field MISP.baseurl to https://localhost
+Change the field MISP.external_base_url to https://localhost
+Change the field MISP.org to <YourOrganizationName>
+Change the field MISP.host_org_id to <YourOrganizationName>
+Create a new user that is used for the integration with TheHive and Cortex
+Administration -> Add User
+email: sync_user@<YourOrganizationDomain>
+organization: <YourOrganizationName>
+role: Sync User
+Uncheck all the checkboxes
+click on "Create user"
+Obtain the Authentication key of the Sync User
+Administration -> List Users
+Click on the "Eye" on the right for the just created user (View)
+Click on "Auth Keys"
+Delete the already created auth key
+Administration -> List Users (again)
+Click on the "Eye" on the right for the just created user (again)
+Click on "Auth Keys" (again)
+Click on "Add authentication key"
+Click on "Submit" and save it for later
+Enable MISP feeds
+Sync Actions -> List Feeds -> Load default feed metadata -> All feeds
+Select the feeds to enable
+Click on "Enable selected" (Marcamos todos de las 4 páginas que salen. Hay 71 en total)
+  
