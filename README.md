@@ -177,7 +177,14 @@ sudo nano application.conf
 
 ![image](https://user-images.githubusercontent.com/20743678/181051656-612bf520-af66-4488-a906-db99ffdc47b7.png)
 
+Configure the IMAP server
+
 ![image](https://user-images.githubusercontent.com/20743678/181052060-5706a38b-afd6-4d59-9de5-11fcdd42f4d3.png)
 
+Configure the MISP container
+
+![image](https://user-images.githubusercontent.com/20743678/181194851-8191f8a2-3722-4c76-ad5b-752242c99160.png)
+
+![image](https://user-images.githubusercontent.com/20743678/181199302-b4b5425e-09a7-4fa7-86cd-c8c489262cc2.png)
 
 
